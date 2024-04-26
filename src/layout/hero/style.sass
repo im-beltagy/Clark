@@ -1,0 +1,62 @@
+@import /src/assets/sass/variables
+
+.hero
+  .carousel-item > .container
+    position: relative
+    height: 45rem
+
+    .img
+      position: absolute
+      height: 60rem
+      width: 100%
+      right: 0
+      background-position: center center
+      background-size: cover
+      background-repeat: no-repeat
+      background-color: $c-dark
+      @include lg-screens
+        width: 85%
+      @include xl-screens
+        width: 60%
+
+    .overlay
+      position: absolute
+      inset: 0
+      background-color: #0004
+      @include lg-screens
+        display: none
+
+  .carousel-caption
+    left: 50%
+    top: 50%
+    bottom: unset
+    transform: translate(-50%, -50%)
+    width: 100%
+    @include lg-screens
+      text-align: left
+      & > .container > *
+        width: 35rem
+
+    .small
+      letter-spacing: .1em
+
+    h1
+      font-size: 2rem
+      @include md-screens
+        font-size: 4rem
+
+    h2
+      letter-spacing: .1em
+      font-size: 1.5rem
+      @include md-screens
+        font-size: 1.7rem
+
+  .carousel-indicators button
+    width: .7rem
+    height: .7rem
+    background-color: $c-light
+    box-shadow: 0 0 0 .2rem $text-secondary
+    background-clip: unset
+    border: none
+    border-radius: 100%
+    margin-inline: .4rem
