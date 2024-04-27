@@ -12,6 +12,7 @@ export default defineConfig({
         "/src/assets/sass/resets",
         "/src/assets/sass/variables",
         "/src/assets/sass/configs",
+        "/src/common/MotionDiv/Index",
       ],
     },
   },
